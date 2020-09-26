@@ -1,7 +1,12 @@
-@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap";
 @import '~wolox-equalizer/equalizer';
 @import 'layout';
+@import 'fonts';
 
-* {
-  font-family: 'Bebas Neue', cursive;
-} 
+body,
+html {
+  background-color: #1d1d1d;
+}
+
+.full-width {
+  width: 100%;
+}

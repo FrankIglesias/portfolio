@@ -1,19 +1,31 @@
 <template>
   <div class="column">
     <navbar></navbar>
-    <h1>Ignacio Francisco Janin Iglesias</h1>
-    <h2>Frotnend developer</h2>
-    <span>I'm a graduate software engineer from UTN. I'm currently working at Wolox as Front-End Engineering Manager using technologies such as React, Angular and Vue. I also love doing research on new technologies and putting them into practice in personal projects.</span>
+    <main-view></main-view>
+    <experience></experience>
+    <portfolio></portfolio>
+    <contact></contact>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import AppFooter from './components/Footer.vue'
+import MainView from './screens/Main.vue'
+import Contact from './screens/Contact.vue'
+import Experience from './screens/Experience.vue'
+import Portfolio from './screens/Portfolio.vue'
 
 export default {
   name: 'App',
   components: { 
-    Navbar
+    Navbar,
+    MainView,
+    Experience,
+    AppFooter,
+    Portfolio,
+    Contact
   }
 }
 </script>
