@@ -1,5 +1,5 @@
 <template>
-  <footer class="self-end">
+  <footer class="container">
     <span class="full-width align-text-center"
       >Feel free to check
       <a
@@ -17,6 +17,10 @@
 export default {};
 </script>
 
-
 <style lang="scss" scoped>
+.container {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+}
 </style>

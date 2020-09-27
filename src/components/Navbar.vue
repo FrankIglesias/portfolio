@@ -22,7 +22,7 @@ export default {
   name: "Navbar",
   data() {
     return {
-      resumePdf: "tbd.pdf",
+      resumePdf: "../assets/CV Francisco Iglesias.pdf",
       socialLinks: [
         {
           img: "mdi-github",

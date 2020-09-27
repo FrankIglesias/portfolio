@@ -49,7 +49,8 @@ export default {
 .section {
   min-height: 100vh;
   > *:first-child {
-    padding: 40px 70px 40px 70px;
+    padding: 40px 70px 40px 140px;
+    position: relative;
   
     @media screen and (max-width: 900px) {
       padding: 40px 10px 40px 70px;

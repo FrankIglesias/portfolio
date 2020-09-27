@@ -109,6 +109,8 @@ export default {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  min-height: 700px;
   grid-gap: 20px;
   margin: 20px 0;
 
@@ -116,6 +118,7 @@ export default {
     grid-template-columns: 1fr;
     grid-template-rows: initial;
     grid-gap: 10px;
+    min-height: auto;
     margin: 10px 0 0;
   }
 }
@@ -162,10 +165,10 @@ export default {
 }
 
 .page-buttons {
-  margin: auto 20px 0;
+  margin: 0 20px;
 
   @media screen and (max-width: 900px) {
-    margin: auto 0 0;
+    margin: 0;
   }
 }
 </style>

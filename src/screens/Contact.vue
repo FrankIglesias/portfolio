@@ -1,5 +1,6 @@
 <template>
-    <div class="column middle full-height">
+  <div class="row middle full-height">
+    <div class="column">
       <h1 class="title">Let's chat</h1>
       <form class="contact-form">
         <input
@@ -40,6 +41,7 @@
       <span class="slash-decoration">Address: Av San Juan 2070 CABA, Argentina</span>
       <app-footer></app-footer>
     </div>
+    </div>
 </template>
 
 <script>
@@ -56,6 +58,7 @@ export default {
   display: grid;
   grid-template-columns: 200px 200px;
   grid-gap: 5px;
+  margin-bottom: 20px;
 
   textarea,
   input[name="subject"],

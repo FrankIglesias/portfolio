@@ -1,8 +1,8 @@
 <template>
 
-<div class="column full-height">
+<div class="column full-height middle">
   <h1 class="title">Job experience</h1>
-  <div class="column">
+  <div class="job-experience">
     <experience v-for="position in positions" :key="position.title" :position="position"></experience>
   </div>
 </div>
@@ -54,4 +54,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.job-experience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>

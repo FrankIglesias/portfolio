@@ -1,11 +1,11 @@
 <template>
-  <div class="project column">
-    <a class="subtitle double-greater-decoration project-name" :href="project.html_url" target="_blank">{{
+  <a class="project column" :href="project.html_url" target="_blank">
+    <span class="subtitle double-greater-decoration project-name">{{
       project.name
-    }}</a>
+    }}</span>
     <span class="hide-sm">{{ project.description }}</span>
     <span class="language" :style="langColor">{{ project.language }}</span>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -26,6 +26,12 @@ export default {
 .project {
   width: 100%;
   max-width: 300px;
+
+  &:hover {
+    .project-name {
+      text-decoration: underline;
+    }
+  }
 }
 
 .project-name {
