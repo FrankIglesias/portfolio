@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="self-end">
     <span class="full-width align-text-center"
       >Feel free to check
       <a

@@ -1,10 +1,11 @@
 <template>
   <div class="column experience" :class="{ colapsed }">
-    <span class="subtitle">{{ position.title }}</span>
+    <span class="double-greater-decoration subtitle">{{ position.title }}</span>
     <span>{{ position.date }}</span>
     <span v-html="position.description"></span>
-    <button @click="toggle" class="more-info">
+    <button @click="toggle" class="more-info hide-sm">
       {{ colapsed ? "Show more" : "Colapse" }}
+      <v-icon>{{ colapsed ? "mdi-arrow-down" : "mdi-arrow-up" }}</v-icon>
     </button>
   </div>
 </template>
@@ -38,7 +39,7 @@ export default {
 }
 
 .colapsed {
-  max-height: 65px;
+  max-height: 60px;
 }
 
 .more-info {

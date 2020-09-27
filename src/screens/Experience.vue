@@ -1,8 +1,8 @@
 <template>
 
-<div class="column container">
+<div class="column full-height">
   <h1 class="title">Job experience</h1>
-  <div class="row wrap">
+  <div class="column">
     <experience v-for="position in positions" :key="position.title" :position="position"></experience>
   </div>
 </div>
@@ -54,8 +54,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  min-height: 100vh;
-  padding-left: 70px;
-}
 </style>

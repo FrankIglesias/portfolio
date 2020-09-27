@@ -247,3 +247,12 @@ $max-order-size: 3 !default;
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .show-sm {
+    display: initial;
+  }
+  .hide-sm {
+    display: none;
+  }
+}
