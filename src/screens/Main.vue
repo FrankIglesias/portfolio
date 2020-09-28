@@ -20,6 +20,8 @@ export default {};
 
 <style lang="scss" scoped>
 @import "src/scss/fonts";
+@import "src/scss/colors";
+
 .description {
   max-width: 300px;
 }
@@ -29,7 +31,7 @@ export default {};
   background: url("../assets/hero_image.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: transparent;
+  color: $transparent;
   background-clip: text;
   font-size: 500px;
   line-height: 500px;

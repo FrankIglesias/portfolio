@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
 @import "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap";
+@import 'colors';
 
 h1,
 h2,
@@ -16,7 +17,7 @@ button,
 select,
 textarea {
   font-family: 'Open Sans', sans-serif;
-  color: #FFF;
+  color: $white;
 }
 
 

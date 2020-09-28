@@ -105,6 +105,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "src/scss/fonts";
+@import "src/scss/colors";
 
 .projects-container {
   display: grid;
@@ -136,7 +137,7 @@ export default {
   label {
     @extend .bebas;
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid $white;
     border-right-width: 0;
     min-width: 50px;
     text-align: center;
@@ -149,8 +150,8 @@ export default {
     }
 
     &:hover {
-      background: #fff;
-      color: #1d1d1d;
+      background: $white;
+      color: $primary-color;
     }
 
     &:last-of-type {
@@ -159,8 +160,8 @@ export default {
   }
 
   input:checked + label {
-    background: #fff;
-    color: #1d1d1d;
+    background: $white;
+    color: $primary-color;
   }
 }
 

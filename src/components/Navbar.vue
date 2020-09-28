@@ -22,7 +22,7 @@ export default {
   name: "Navbar",
   data() {
     return {
-      resumePdf: "../assets/CV Francisco Iglesias.pdf",
+      resumePdf: "https://go-mailer.franciscojiglesias.vercel.app/CV.pdf",
       socialLinks: [
         {
           img: "mdi-github",

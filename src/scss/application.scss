@@ -1,10 +1,11 @@
 @import '~wolox-equalizer/equalizer';
 @import 'layout';
 @import 'fonts';
+@import 'colors';
 
 body,
 html {
-  background-color: #1d1d1d;
+  background-color: $primary-color;
 }
 
 

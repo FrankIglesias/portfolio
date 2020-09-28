@@ -1,35 +1,40 @@
 <template>
-  <div class="row middle full-height">
+  <div class="row middle full-height space-between">
     <div class="column">
       <h1 class="title">Let's chat</h1>
-      <form class="contact-form">
+      <form @submit.prevent="emailUser" class="contact-form">
         <input
           class="contact-input"
           type="text"
-          name="first-name"
+          name="name"
+          v-model="name"
           placeholder="Name"
         />
         <input
           class="contact-input"
           type="text"
-          name="last-name"
+          name="last_name"
+          v-model="lastName"
           placeholder="Last Name"
         />
         <input
           class="contact-input"
           type="email"
           name="email"
+          v-model="email"
           placeholder="Email"
         />
         <input
           class="contact-input"
           type="text"
           name="subject"
+          v-model="subject"
           placeholder="Subject"
         />
         <textarea
           class="contact-input"
-          name="body"
+          name="message"
+          v-model="message"
           placeholder="Write a message"
         />
         <button class="contact-buttons bebas" type="button">Clear</button>
@@ -38,22 +43,57 @@
       <h3 class="text-m">Contact info</h3>
       <span class="slash-decoration">Email: ifrancisco.iglesias@gmail.com</span>
       <span class="slash-decoration">Phone: +541133578314</span>
-      <span class="slash-decoration">Address: Av San Juan 2070 CABA, Argentina</span>
+      <span class="slash-decoration"
+        >Address: Av San Juan 2070 CABA, Argentina</span
+      >
       <app-footer></app-footer>
     </div>
-    </div>
+    <img src="../assets/contact_photo.jpeg" class="contact-image" />
+    <v-snackbar v-model="snackbar" :timeout="3000">
+      Email has been seent
+    </v-snackbar>
+  </div>
 </template>
 
 <script>
 import AppFooter from "../components/Footer.vue";
+import { sendEmail } from "../services/email";
 export default {
+  data() {
+    return {
+      snackbar: false,
+      name: "",
+      lastName: "",
+      email: "",
+      subject: "",
+      message: "",
+    };
+  },
   components: {
     AppFooter,
+  },
+  methods: {
+    emailUser(event) {
+      event.preventDefault();
+      sendEmail({
+        name: this.name,
+        last_name: this.lastName,
+        email: this.email,
+        subject: this.subject,
+        message: this.message,
+      }).then((response) => {
+        if (response.ok) {
+          this.snackbar = true;
+        }
+      });
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "src/scss/colors";
+
 .contact-form {
   display: grid;
   grid-template-columns: 200px 200px;
@@ -78,13 +118,23 @@ export default {
 }
 
 .contact-buttons {
-  border: 1px solid #fff;
+  border: 1px solid $white;
   padding: 10px;
+  letter-spacing: 1px;
   transition: color, background 0.3s ease-in-out;
 
   &:hover {
-    background: #fff;
-    color: #1d1d1d;
+    background: $white;
+    color: $primary-color;
   }
+}
+
+.contact-image {
+  height: 100vh;
+  opacity: 0.7;
+  position: relative;
+  left: 225px;
+  max-width: 50vw;
+  object-fit: cover;
 }
 </style>
