@@ -10,8 +10,13 @@
       >
         <v-icon class="icon">{{ socialLink.img }}</v-icon>
       </a>
+      <span data-menuanchor="contact">
+        <a href="#contact">
+          <v-icon class="icon">mdi-email</v-icon>
+        </a>
+      </span>
       <a :href="resumePdf" download>
-        <v-icon class="icon">mdi-file-pdf</v-icon>
+        <v-icon class="icon">mdi-file-account</v-icon>
       </a>
     </div>
   </div>
@@ -31,10 +36,6 @@ export default {
         {
           img: "mdi-linkedin",
           link: "https://www.linkedin.com/in/francisco-janin-iglesias/",
-        },
-        {
-          img: "mdi-email",
-          link: "mailto:ifrancisco.iglesias@gmail.com",
         },
       ],
     };

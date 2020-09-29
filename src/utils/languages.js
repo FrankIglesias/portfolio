@@ -664,7 +664,7 @@ export default {
     url: "https://github.com/trending?l=Java-Server-Pages",
   },
   JavaScript: {
-    color: "#F5DE17",
+    color: "#C2B00D",
     url: "https://github.com/trending?l=JavaScript",
   },
   "JavaScript+ERB": {

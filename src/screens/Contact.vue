@@ -42,10 +42,7 @@
       </form>
       <h3 class="text-m">Contact info</h3>
       <span class="slash-decoration">Email: ifrancisco.iglesias@gmail.com</span>
-      <span class="slash-decoration">Phone: +541133578314</span>
-      <span class="slash-decoration"
-        >Address: Av San Juan 2070 CABA, Argentina</span
-      >
+      <span class="slash-decoration">Phone: +54 911 3357-8314</span>
       <app-footer></app-footer>
     </div>
     <img src="../assets/contact_photo.jpeg" class="contact-image" />

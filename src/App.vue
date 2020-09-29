@@ -11,7 +11,7 @@
       <div class="section">
         <portfolio></portfolio>
       </div>
-      <div class="section">
+      <div class="section" data-anchor="contact">
         <contact></contact>
       </div>
     </full-page>

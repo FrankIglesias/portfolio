@@ -2,7 +2,7 @@
   <div class="full-height row middle space-between">
     <div class="column">
       <h1 class="title">Ignacio Francisco Janin Iglesias</h1>
-      <h2 class="subtitle">Frotnend developer</h2>
+      <h2 class="subtitle">Frontend developer</h2>
       <span class="description"
         >I'm a graduate software engineer from UTN. I'm currently working at
         Wolox as Front-End Engineering Manager using technologies such as React,

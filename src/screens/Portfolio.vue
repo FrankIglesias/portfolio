@@ -76,7 +76,7 @@ export default {
         this.projects = response.data;
         this.langs = Object.keys(
           response.data.reduce(
-            (acc, project) => ({ ...acc, [project.language]: 1 }),
+            (acc, project) => ({ ...acc, ...(project.language && {[project.language]: 1}) }),
             {}
           )
         );
