@@ -53,6 +53,9 @@ export default {
   padding: 10px;
   z-index: 1;
   border-right: 1px solid gray;
+  @media screen and (max-width: 900px) {
+    padding: 10px 10px 75px;
+  }
 }
 
 .icon {

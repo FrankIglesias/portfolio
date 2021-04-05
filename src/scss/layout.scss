@@ -256,3 +256,14 @@ $max-order-size: 3 !default;
     display: none;
   }
 }
+
+
+.full-width {
+  width: 100%;
+}
+
+@media screen and (max-width: $media-breakpoint) {
+  .full-width-sm {
+    width: 100%;
+  }
+}

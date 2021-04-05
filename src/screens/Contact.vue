@@ -1,6 +1,6 @@
 <template>
   <div class="row middle full-height space-between">
-    <div class="column">
+    <div class="column form-container">
       <h1 class="title">Let's chat</h1>
       <form @submit.prevent="emailUser" class="contact-form">
         <input
@@ -108,10 +108,25 @@ export default {
   }
 }
 
+.form-container {
+  @media screen and (max-width: 900px) {
+    min-width: 100%;
+  }
+}
+
 .contact-input {
   height: 100%;
   background: rgba(255, 255, 255, 0.3);
   padding: 8px;
+
+  @media screen and (max-width: 900px) {
+    grid-column: 1 / span 2;
+    height: 30px;
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
 }
 
 .contact-buttons {
