@@ -20,8 +20,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 h-screen w-[50px] p-[10px] z-10 border-r border-gray-500 flex flex-col justify-between items-center max-[900px]:pb-[75px]">
       <a
         href="/"
-        className="no-underline text-white text-sm leading-none [writing-mode:vertical-lr] rotate-180"
-        style={{ fontFamily: 'var(--font-bebas), cursive' }}
+        className="font-bebas no-underline text-white text-sm leading-none [writing-mode:vertical-lr] rotate-180"
       >
         <span>{'< / >'}</span>
       </a>

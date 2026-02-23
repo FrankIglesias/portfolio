@@ -14,8 +14,8 @@ interface Repo {
   language: string | null;
 }
 
-const ITEMS_DESKTOP = 20;
-const ITEMS_MOBILE = 6;
+const ITEMS_DESKTOP = 12;
+const ITEMS_MOBILE = 9;
 
 export default function PortfolioSection() {
   const [projects, setProjects] = useState<Repo[]>([]);
@@ -29,7 +29,7 @@ export default function PortfolioSection() {
   }, []);
 
   useEffect(() => {
-    fetch('https://api.github.com/users/Frankiglesias/repos', {
+    fetch('https://api.github.com/users/Frankiglesias/repos?type=owner', {
       headers: { accept: 'application/vnd.github.mercy-preview+json' },
     })
       .then((res) => res.json())
@@ -71,16 +71,7 @@ export default function PortfolioSection() {
   return (
     <div className="column full-height">
       <h1 className="title">Portfolio</h1>
-      <h2 className="hide-sm">
-        Projects taken from{' '}
-        <a
-          href="https://www.github.com/FrankIglesias"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          my github account
-        </a>
-      </h2>
+
       {filteredProjects.length > 0 && (
         <div className={styles.filterGroup}>
           <div className={styles.radioInput}>

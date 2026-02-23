@@ -5,17 +5,17 @@ import './globals.css';
 const bebasNeue = Bebas_Neue({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-bebas',
+  variable: '--nextfont-bebas',
 });
 
 const openSans = Open_Sans({
   subsets: ['latin'],
-  variable: '--font-open',
+  variable: '--nextfont-open',
 });
 
 export const metadata: Metadata = {
   title: 'Francisco Janin Iglesias',
-  description: 'Frontend developer portfolio',
+  description: 'Tech Lead at Tree Nation and podcast co-host at Frontend Army. Frontend engineer specialising in architecture, engineering excellence, and building high-quality web products.',
   icons: {
     icon: '/favicon.png',
   },
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${bebasNeue.variable} ${openSans.variable}`}>
+    <html lang="en" className={`${bebasNeue.variable} ${openSans.variable}`} suppressHydrationWarning>
       <body>{children}</body>
     </html>
   );

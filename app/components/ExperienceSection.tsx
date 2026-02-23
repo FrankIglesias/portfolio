@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, RefObject } from 'react';
-import { ArrowDownIcon } from '@radix-ui/react-icons';
+import { ArrowDownIcon, ArrowUpIcon } from '@radix-ui/react-icons';
 import ExperienceCard from './ExperienceCard';
 import positions from '../data/experience';
 
@@ -13,8 +13,9 @@ export default function ExperienceSection({ scrollContainerRef }: ExperienceSect
   const [activeIndex, setActiveIndex] = useState(0);
   const lockedRef = useRef(false);
   const activeIndexRef = useRef(0);
+  const navigateRef = useRef<(direction: 1 | -1) => void>(() => {});
 
-  function navigate(direction: 1 | -1) {
+  navigateRef.current = (direction: 1 | -1) => {
     if (lockedRef.current) return;
     lockedRef.current = true;
 
@@ -37,24 +38,24 @@ export default function ExperienceSection({ scrollContainerRef }: ExperienceSect
     }
 
     setTimeout(() => { lockedRef.current = false; }, 700);
-  }
+  };
 
-  // Wheel — accumulate delta and only navigate once threshold is reached
+  // Wheel — navigate once per gesture, locked until animation completes
   useEffect(() => {
-    const THRESHOLD = 80;
+    const THRESHOLD = 50;
     let accumulated = 0;
     let resetTimer: ReturnType<typeof setTimeout> | null = null;
 
     const onWheel = (e: WheelEvent) => {
       e.preventDefault();
       accumulated += e.deltaY;
-
       if (resetTimer) clearTimeout(resetTimer);
-      resetTimer = setTimeout(() => { accumulated = 0; }, 200);
+      resetTimer = setTimeout(() => { accumulated = 0; }, 300);
 
       if (Math.abs(accumulated) >= THRESHOLD) {
-        navigate(accumulated > 0 ? 1 : -1);
+        const dir = accumulated > 0 ? 1 : -1;
         accumulated = 0;
+        navigateRef.current(dir);
       }
     };
     const section = document.getElementById('experience');
@@ -69,7 +70,7 @@ export default function ExperienceSection({ scrollContainerRef }: ExperienceSect
     const onTouchEnd = (e: TouchEvent) => {
       const delta = touchStartY - e.changedTouches[0].clientY;
       if (Math.abs(delta) < 30) return;
-      navigate(delta > 0 ? 1 : -1);
+      navigateRef.current(delta > 0 ? 1 : -1);
     };
     const section = document.getElementById('experience');
     section?.addEventListener('touchstart', onTouchStart);
@@ -88,25 +89,39 @@ export default function ExperienceSection({ scrollContainerRef }: ExperienceSect
     setTimeout(() => { lockedRef.current = false; }, 700);
   }
 
+
+
   return (
     <div className="flex flex-col h-full">
-      <div className="flex items-center justify-between shrink-0">
-        <h1 className="text-[60px] leading-15.5" style={{ fontFamily: 'var(--font-bebas), cursive' }}>
+      <div className="flex items-center justify-between shrink-0 mt-8 max-[900px]:mt-0">
+        <h1 className="font-bebas text-[60px] leading-15.5">
           Job experience
         </h1>
-        <button
-          onClick={() => {
-            const container = scrollContainerRef.current;
-            const portfolio = document.getElementById('portfolio');
-            if (container && portfolio) container.scrollTo({ top: portfolio.offsetTop, behavior: 'smooth' });
-          }}
-          className="flex items-center gap-1 text-sm opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
-          aria-label="Go to portfolio"
-        >
-          <ArrowDownIcon width={18} height={18} />
-        </button>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => {
+              const container = scrollContainerRef.current;
+              if (container) container.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="flex items-center gap-1 text-sm opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
+            aria-label="Go to main section"
+          >
+            <ArrowUpIcon width={18} height={18} />
+          </button>
+          <button
+            onClick={() => {
+              const container = scrollContainerRef.current;
+              const portfolio = document.getElementById('portfolio');
+              if (container && portfolio) container.scrollTo({ top: portfolio.offsetTop, behavior: 'smooth' });
+            }}
+            className="flex items-center gap-1 text-sm opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
+            aria-label="Go to portfolio"
+          >
+            <ArrowDownIcon width={18} height={18} />
+          </button>
+        </div>
       </div>
-      <div className="flex-1 flex flex-row gap-12 overflow-hidden">
+      <div className="flex-1 flex flex-row gap-12 max-[900px]:gap-4 overflow-hidden">
         {/* Vertical dots */}
         <div className="flex flex-col justify-center gap-1 shrink-0">
           {positions.map((_, i) => (

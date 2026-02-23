@@ -2,22 +2,22 @@
 
 @theme {
   --color-primary: #1d1d1d;
-  --font-bebas: var(--font-bebas);
-  --font-open: var(--font-open);
+  --font-bebas: var(--nextfont-bebas), cursive;
+  --font-open: var(--nextfont-open), sans-serif;
 }
 
 @layer base {
   html, body {
     background-color: #1d1d1d;
     color: #fff;
-    font-family: var(--font-open), sans-serif;
+    font-family: var(--font-open);
   }
 
   h1, h2, h3, h4, h5, h6,
   p, span, label, input, a, button, select, textarea {
-    font-family: var(--font-open), sans-serif;
+    font-family: var(--font-open);
     color: #fff;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   textarea {
@@ -27,7 +27,7 @@
 
 @layer utilities {
   .title {
-    font-family: var(--font-bebas), cursive;
+    font-family: var(--font-bebas);
     font-size: 5rem;
     letter-spacing: 0.04em;
     line-height: 1;

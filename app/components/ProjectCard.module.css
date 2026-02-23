@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 4px;
   width: 100%;
+  min-width: 0;
   text-decoration: none;
 }
 
@@ -12,11 +13,18 @@
 
 .projectName {
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   letter-spacing: 0.03em;
-  white-space: nowrap;
+  line-height: 1;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .language {

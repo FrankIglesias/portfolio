@@ -2,10 +2,10 @@ export default function MainSection() {
   return (
     <div className="flex flex-row items-center h-full justify-between">
       <div className="flex flex-col">
-        <h1 className="text-[60px] leading-[62px]" style={{ fontFamily: 'var(--font-bebas), cursive' }}>
+        <h1 className="font-bebas text-[60px] leading-15.5">
           Ignacio Francisco Janin Iglesias
         </h1>
-        <h2 className="text-[32px] leading-[34px]" style={{ fontFamily: 'var(--font-bebas), cursive' }}>
+        <h2 className="font-bebas text-[32px] leading-8.5">
           Tech Lead @ Tree Nation · Podcast Co-Host @ Frontend Army
         </h2>
         <span className="text-base leading-relaxed max-w-lg">
