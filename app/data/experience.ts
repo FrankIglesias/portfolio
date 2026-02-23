@@ -18,6 +18,15 @@ const positions: Position[] = [
       'Leading engineering teams to build scalable, high-quality web applications. Bridging technical strategy with hands-on development to drive product innovation and team growth.',
   },
   {
+    title: 'Podcast Host',
+    company: 'Frontend Army',
+    location: 'Barcelona, Spain',
+    startDate: '2022-06',
+    endDate: 'Present',
+    description:
+      'Co-hosting a Spanish-language podcast dedicated to frontend development, sharing practical insights, trends, and interviews with developers to inspire and grow the tech community.',
+  },
+  {
     title: 'Senior Frontend Engineer',
     company: 'Tree-Nation',
     location: 'Barcelona, Spain',
@@ -88,15 +97,6 @@ const positions: Position[] = [
     endDate: '2018-10',
     description:
       'Started as a Front-End developer building solutions across education, e-commerce, and banking industries, using JS, CSS, HTML, React, React Native, Angular & Vue, hosted on Heroku and AWS.',
-  },
-  {
-    title: 'Podcast Host',
-    company: 'Frontend Army',
-    location: 'Barcelona, Spain',
-    startDate: '2022-06',
-    endDate: 'Present',
-    description:
-      'Co-hosting a Spanish-language podcast dedicated to frontend development, sharing practical insights, trends, and interviews with developers to inspire and grow the tech community.',
   },
   {
     title: 'Teaching Assistant – Systems Design',
