@@ -7,10 +7,6 @@
   text-decoration: none;
 }
 
-.project:hover .projectName {
-  text-decoration: underline;
-}
-
 .projectName {
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5rem;
@@ -18,6 +14,30 @@
   line-height: 1;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.projectName::before {
+  content: '>>';
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-right: 0;
+  transition: max-width 0.5s ease, opacity 0.5s ease, margin-right 0.5s ease;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.project:hover .projectName::before {
+  max-width: 3em;
+  opacity: 1;
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  .projectName::before {
+    display: none;
+  }
 }
 
 .description {

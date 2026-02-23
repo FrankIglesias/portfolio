@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       rel="noopener noreferrer"
     >
       <div className="min-[900px]:contents max-[899px]:flex max-[899px]:items-center max-[899px]:gap-2 max-[899px]:flex-wrap">
-        <span className={`subtitle double-greater-decoration ${styles.projectName}`}>
+        <span className={styles.projectName}>
           {project.name}
         </span>
         {project.language && (
