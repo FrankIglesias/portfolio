@@ -1,9 +1,8 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { mdiArrowLeft, mdiArrowRight } from '@mdi/js';
+import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import ProjectCard from './ProjectCard';
-import Icon from './Icon';
 import styles from './PortfolioSection.module.css';
 
 interface Repo {
@@ -122,7 +121,7 @@ export default function PortfolioSection() {
               onClick={() => setPage(page - 1)}
               aria-label="Previous page"
             >
-              <Icon path={mdiArrowLeft} size={24} />
+              <ArrowLeftIcon width={24} height={24} />
             </button>
           )}
           {page !== totalPages && (
@@ -131,7 +130,7 @@ export default function PortfolioSection() {
               onClick={() => setPage(page + 1)}
               aria-label="Next page"
             >
-              <Icon path={mdiArrowRight} size={24} />
+              <ArrowRightIcon width={24} height={24} />
             </button>
           )}
         </div>
