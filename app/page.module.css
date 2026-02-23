@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.scrollContainer {
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+.section > *:first-child {
+  padding: 40px 70px 40px 140px;
+  position: relative;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+  .section > *:first-child {
+    padding: 40px 10px 40px 70px;
+  }
+}

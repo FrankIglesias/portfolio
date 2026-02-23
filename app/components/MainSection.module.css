@@ -1,0 +1,25 @@
+.description {
+  max-width: 300px;
+}
+
+.heroText {
+  font-family: 'Bebas Neue', cursive;
+  background: url('/hero_image.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 500px;
+  line-height: 500px;
+  user-select: none;
+  background-attachment: fixed;
+  background-position: center;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+  .heroText {
+    display: none;
+  }
+}

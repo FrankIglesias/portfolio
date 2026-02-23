@@ -1,0 +1,12 @@
+.jobExperience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .jobExperience {
+    display: flex;
+    flex-direction: column;
+  }
+}

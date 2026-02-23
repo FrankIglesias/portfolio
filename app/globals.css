@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1d1d1d;
+  --font-bebas: var(--font-bebas);
+  --font-open: var(--font-open);
+}
+
+@layer base {
+  html, body {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: var(--font-open), sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  p, span, label, input, a, button, select, textarea {
+    font-family: var(--font-open), sans-serif;
+    color: #fff;
+    line-height: 1;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
