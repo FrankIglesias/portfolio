@@ -1,4 +1,4 @@
-import { GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon, IdCardIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, LinkedInLogoIcon, IdCardIcon } from '@radix-ui/react-icons';
 
 const socialLinks = [
   {
@@ -38,13 +38,6 @@ export default function Navbar() {
             <social.icon width={24} height={24} />
           </a>
         ))}
-        <a
-          href="#contact"
-          className="flex items-center justify-center text-white"
-          aria-label="Contact"
-        >
-          <EnvelopeClosedIcon width={24} height={24} />
-        </a>
         <a
           href={RESUME_PDF}
           download

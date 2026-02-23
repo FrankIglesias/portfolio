@@ -6,13 +6,10 @@ export default function MainSection() {
           Ignacio Francisco Janin Iglesias
         </h1>
         <h2 className="text-[32px] leading-[34px]" style={{ fontFamily: 'var(--font-bebas), cursive' }}>
-          Frontend developer
+          Tech Lead @ Tree Nation · Podcast Co-Host @ Frontend Army
         </h2>
-        <span className="text-base leading-[18px] max-w-[300px]">
-          I&apos;m a graduate software engineer from UTN. I&apos;m currently
-          working at Wolox as Front-End Engineering Manager using technologies
-          such as React, Angular and Vue. I also love doing research on new
-          technologies and putting them into practice in personal projects.
+        <span className="text-base leading-relaxed max-w-lg">
+          Driving frontend architecture and engineering excellence at Tree-Nation, a global reforestation platform. Proven track record of owning the full frontend lifecycle — from technical design and code review to mentoring engineers and aligning with product and business stakeholders.
         </span>
       </div>
       <span

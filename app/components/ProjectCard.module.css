@@ -1,6 +1,8 @@
 .project {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
-  max-width: 300px;
   text-decoration: none;
 }
 
@@ -9,6 +11,9 @@
 }
 
 .projectName {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

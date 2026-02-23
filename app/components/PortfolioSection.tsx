@@ -81,7 +81,7 @@ export default function PortfolioSection() {
         </a>
       </h2>
       {filteredProjects.length > 0 && (
-        <div className="row wrap">
+        <div className={styles.filterGroup}>
           <div className={styles.radioInput}>
             <input
               type="radio"

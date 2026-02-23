@@ -16,6 +16,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: 'Francisco Janin Iglesias',
   description: 'Frontend developer portfolio',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

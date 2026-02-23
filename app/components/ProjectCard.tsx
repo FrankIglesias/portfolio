@@ -28,12 +28,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <span className={`subtitle double-greater-decoration ${styles.projectName}`}>
         {project.name}
       </span>
-      <span className="hide-sm">{project.description}</span>
       {project.language && (
         <span className={styles.language} style={langColor}>
           {project.language}
         </span>
       )}
+      <span className="hide-sm">{project.description}</span>
     </a>
   );
 }
