@@ -1,94 +1,96 @@
 .projectsContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 36px;
-  margin: 32px 0 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 36px;
+	margin: 32px 0 10px;
 }
 
 @media screen and (max-width: 900px) {
-  .projectsContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: initial;
-    gap: 10px;
-    min-height: auto;
-    margin: 10px 0 0;
-  }
+	.projectsContainer {
+		grid-template-columns: 1fr;
+		grid-template-rows: initial;
+		gap: 10px;
+		min-height: auto;
+		margin: 10px 0 0;
+	}
 }
 
 .filterGroup {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
 }
 
 .radioInput {
-  position: relative;
+	position: relative;
 }
 
 .radioInput input {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
 }
 
 .radioInput label {
-  font-family: var(--font-bebas);
-  padding: 10px 16px;
-  border: 1px solid #fff;
-  border-right-width: 0;
-  min-width: 60px;
-  text-align: center;
-  cursor: pointer;
-  display: block;
-  white-space: nowrap;
-  transition: color 0.4s ease-in-out, background 0.4s ease-in-out;
+	font-family: var(--font-bebas);
+	padding: 10px 16px;
+	border: 1px solid #fff;
+	border-right-width: 0;
+	min-width: 60px;
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	white-space: nowrap;
+	transition:
+		color 0.4s ease-in-out,
+		background 0.4s ease-in-out;
 }
 
 .radioInput:last-child label {
-  border-right-width: 1px;
+	border-right-width: 1px;
 }
 
 .radioInput label:hover {
-  background: #fff;
-  color: #1d1d1d;
+	background: #fff;
+	color: #1d1d1d;
 }
 
 .radioInput input:checked + label {
-  background: #fff;
-  color: #1d1d1d;
+	background: #fff;
+	color: #1d1d1d;
 }
 
 .pageButtons {
-  margin: 16px 0 0;
+	margin: 16px 0 0;
 }
 
 .pageButtons button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  padding: 5px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	padding: 5px;
 }
 
 .pageButtons button:hover {
-  opacity: 0.8;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: 900px) {
-  .pageButtons {
-    margin: 0;
-  }
+	.pageButtons {
+		margin: 0;
+	}
 
-  .radioInput label {
-    padding: 6px 10px;
-    min-width: 40px;
-    font-size: 0.8rem;
-    border-right-width: 1px;
-  }
+	.radioInput label {
+		padding: 6px 10px;
+		min-width: 40px;
+		font-size: 0.8rem;
+		border-right-width: 1px;
+	}
 
-  .radioInput:last-child label {
-    border-right-width: 1px;
-  }
+	.radioInput:last-child label {
+		border-right-width: 1px;
+	}
 }

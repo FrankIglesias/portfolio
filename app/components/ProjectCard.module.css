@@ -1,58 +1,61 @@
 .project {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-  min-width: 0;
-  text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: 100%;
+	min-width: 0;
+	text-decoration: none;
 }
 
 .projectName {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 1.5rem;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	font-family: "Bebas Neue", cursive;
+	font-size: 1.5rem;
+	letter-spacing: 0.03em;
+	line-height: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .projectName::before {
-  content: '>>';
-  display: inline-block;
-  max-width: 0;
-  overflow: hidden;
-  opacity: 0;
-  margin-right: 0;
-  transition: max-width 0.5s ease, opacity 0.5s ease, margin-right 0.5s ease;
-  white-space: nowrap;
-  vertical-align: bottom;
+	content: ">>";
+	display: inline-block;
+	max-width: 0;
+	overflow: hidden;
+	opacity: 0;
+	margin-right: 0;
+	transition:
+		max-width 0.5s ease,
+		opacity 0.5s ease,
+		margin-right 0.5s ease;
+	white-space: nowrap;
+	vertical-align: bottom;
 }
 
 .project:hover .projectName::before {
-  max-width: 3em;
-  opacity: 1;
-  margin-right: 6px;
+	max-width: 3em;
+	opacity: 1;
+	margin-right: 6px;
 }
 
 @media screen and (max-width: 900px) {
-  .projectName::before {
-    display: none;
-  }
+	.projectName::before {
+		display: none;
+	}
 }
 
 .description {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .language {
-  width: fit-content;
-  border-radius: 10px;
-  padding: 2px 5px;
-  margin: 5px 5px 5px 0;
-  font-size: 12px;
-  line-height: 16px;
-  color: #1d1d1d;
+	width: fit-content;
+	border-radius: 10px;
+	padding: 2px 5px;
+	margin: 5px 5px 5px 0;
+	font-size: 12px;
+	line-height: 16px;
+	color: #1d1d1d;
 }

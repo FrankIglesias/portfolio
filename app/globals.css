@@ -7,30 +7,43 @@
 }
 
 @layer base {
-  html, body {
-    background-color: #1d1d1d;
-    color: #fff;
-    font-family: var(--font-open);
-  }
+	html,
+	body {
+		background-color: #1d1d1d;
+		color: #fff;
+		font-family: var(--font-open);
+	}
 
-  h1, h2, h3, h4, h5, h6,
-  p, span, label, input, a, button, select, textarea {
-    font-family: var(--font-open);
-    color: #fff;
-    line-height: 1.2;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	span,
+	label,
+	input,
+	a,
+	button,
+	select,
+	textarea {
+		font-family: var(--font-open);
+		color: #fff;
+		line-height: 1.2;
+	}
 
-  textarea {
-    resize: none;
-  }
+	textarea {
+		resize: none;
+	}
 }
 
 @layer utilities {
-  .title {
-    font-family: var(--font-bebas);
-    font-size: 5rem;
-    letter-spacing: 0.04em;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
+	.title {
+		font-family: var(--font-bebas);
+		font-size: 5rem;
+		letter-spacing: 0.04em;
+		line-height: 1;
+		margin-bottom: 8px;
+	}
 }
