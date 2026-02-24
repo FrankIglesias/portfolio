@@ -3,7 +3,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import ProjectCard from './ProjectCard';
-import Footer from './Footer';
 import styles from './PortfolioSection.module.css';
 
 interface Repo {
@@ -127,7 +126,6 @@ export default function PortfolioSection() {
           )}
         </div>
       )}
-      <Footer />
     </div>
   );
 }

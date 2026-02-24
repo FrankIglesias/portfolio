@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import MainSection from './components/MainSection';
 import ExperienceSection from './components/ExperienceSection';
 import PortfolioSection from './components/PortfolioSection';
+import FrontendArmySection from './components/FrontendArmySection';
 
 export default function Home() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -24,6 +25,9 @@ export default function Home() {
         </section>
         <section className="min-h-screen snap-start [&>*:first-child]:p-[40px_70px_40px_140px] [&>*:first-child]:relative [&>*:first-child]:min-h-screen max-[900px]:[&>*:first-child]:p-[40px_10px_60px_70px]" id="portfolio">
           <PortfolioSection />
+        </section>
+        <section className="min-h-screen snap-start [&>*:first-child]:p-[40px_70px_40px_140px] [&>*:first-child]:relative [&>*:first-child]:min-h-screen max-[900px]:[&>*:first-child]:p-[40px_10px_60px_70px]" id="frontend-army">
+          <FrontendArmySection />
         </section>
       </div>
     </div>
