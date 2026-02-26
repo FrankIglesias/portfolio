@@ -13,8 +13,6 @@ const socialLinks = [
 	},
 ];
 
-const RESUME_PDF = 'https://go-mailer.franciscojiglesias.vercel.app/CV.pdf';
-
 export default function Navbar() {
 	return (
 		<nav className="fixed top-0 left-0 h-screen w-[50px] p-[10px] z-10 border-r border-gray-500 flex flex-col justify-between items-center max-[900px]:pb-[75px]">
@@ -38,10 +36,9 @@ export default function Navbar() {
 					</a>
 				))}
 				<a
-					href={RESUME_PDF}
-					download
+					href="/resume"
 					className="flex items-center justify-center text-white"
-					aria-label="Download resume"
+					aria-label="Resume"
 				>
 					<IdCardIcon width={24} height={24} />
 				</a>
