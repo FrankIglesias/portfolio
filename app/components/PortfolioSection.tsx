@@ -11,6 +11,7 @@ interface Repo {
 	description: string | null;
 	html_url: string;
 	language: string | null;
+  updated_at: string;
 }
 
 const ITEMS_DESKTOP = 12;
