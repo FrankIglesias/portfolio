@@ -33,9 +33,15 @@ export default function PortfolioSection() {
 		})
 			.then((res) => res.json())
 			.then((data: Repo[]) => {
-				setProjects(data);
+				// Sort by updated_at descending
+				const sorted = [...data].sort((a, b) => {
+					const aDate = new Date(a.updated_at as any);
+					const bDate = new Date(b.updated_at as any);
+					return bDate.getTime() - aDate.getTime();
+				});
+				setProjects(sorted);
 				const uniqueLangs = Object.keys(
-					data.reduce<Record<string, number>>((acc, project) => {
+					sorted.reduce<Record<string, number>>((acc, project) => {
 						if (project.language) acc[project.language] = 1;
 						return acc;
 					}, {}),

@@ -3,7 +3,7 @@
 	background: #fff;
 	color: #1a1a1a;
 	font-family: 'Georgia', serif;
-	padding-left: 50px;
+	padding-left: 24px;
 }
 
 /* Override the portfolio global styles that force color: #fff on all text elements */
@@ -20,7 +20,28 @@
 .container {
 	max-width: 780px;
 	margin: 0 auto;
-	padding: 32px 40px;
+	padding: 40px 64px;
+	box-sizing: border-box;
+}
+@media (max-width: 900px) {
+	.container {
+		padding: 32px 40px;
+	}
+}
+@media (max-width: 600px) {
+	.container {
+		padding: 20px 8vw !important;
+	}
+}
+@media (max-width: 600px) {
+	.container {
+		padding: 20px 20px;
+	}
+}
+@media (max-width: 600px) {
+	.container {
+		padding: 20px 12px;
+	}
 }
 
 /* Header */
@@ -100,6 +121,7 @@
 	line-height: 1.55;
 	color: #333;
 	margin: 0;
+	text-align: justify;
 }
 
 /* Skills */
@@ -109,6 +131,29 @@
 	gap: 6px 24px;
 	font-size: 12.5px;
 	font-family: 'Arial', sans-serif;
+	text-align: justify;
+}
+/* Mobile styles */
+@media (max-width: 600px) {
+	.page {
+		padding-left: 0;
+	}
+	.container {
+		padding: 16px 4px;
+	}
+	.header {
+		flex-direction: column;
+		gap: 8px;
+		align-items: flex-start;
+	}
+	.contact {
+		align-items: flex-start;
+		font-size: 11px;
+	}
+	.skillsGrid {
+		grid-template-columns: 1fr;
+		gap: 8px 0;
+	}
 }
 
 .skillLabel {

@@ -67,15 +67,6 @@ export const experience: Position[] = [
 			'Leading engineering teams to build scalable, high-quality web applications. Bridging technical strategy with hands-on development to drive product innovation and team growth.',
 	},
 	{
-		title: 'Podcast Co-Host',
-		company: 'Frontend Army',
-		location: 'Barcelona, Spain',
-		startDate: '2022-06',
-		endDate: 'Present',
-		description:
-			'Co-hosting a Spanish-language podcast dedicated to frontend development, sharing practical insights, trends, and interviews with developers to inspire and grow the tech community.',
-	},
-	{
 		title: 'Senior Frontend Engineer',
 		company: 'Tree-Nation',
 		location: 'Barcelona, Spain',
@@ -83,6 +74,15 @@ export const experience: Position[] = [
 		endDate: '2025-06',
 		description:
 			"Built and maintained high-performance frontend features for Tree-Nation's platform, helping users and companies track their global reforestation impact through intuitive, modern interfaces.",
+	},
+	{
+		title: 'Podcast Co-Host',
+		company: 'Frontend Army',
+		location: 'Barcelona, Spain',
+		startDate: '2022-06',
+		endDate: 'Present',
+		description:
+			'Co-hosting a Spanish-language podcast dedicated to frontend development, sharing practical insights, trends, and interviews with developers to inspire and grow the tech community.',
 	},
 	{
 		title: 'Sr. Frontend Engineer',
