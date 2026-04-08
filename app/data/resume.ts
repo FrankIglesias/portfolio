@@ -60,7 +60,7 @@ export const experience: Position[] = [
 	{
 		title: 'Technical Lead',
 		company: 'Tree-Nation',
-		location: 'Barcelona, Spain',
+		location: 'Spain',
 		startDate: '2025-06',
 		endDate: 'Present',
 		description:
@@ -69,7 +69,7 @@ export const experience: Position[] = [
 	{
 		title: 'Senior Frontend Engineer',
 		company: 'Tree-Nation',
-		location: 'Barcelona, Spain',
+		location: 'Spain',
 		startDate: '2024-06',
 		endDate: '2025-06',
 		description:
@@ -78,7 +78,7 @@ export const experience: Position[] = [
 	{
 		title: 'Sr. Frontend Engineer',
 		company: 'Deel',
-		location: 'Barcelona, Spain',
+		location: 'Spain',
 		startDate: '2023-06',
 		endDate: '2024-06',
 		description:
@@ -87,7 +87,7 @@ export const experience: Position[] = [
 	{
 		title: 'Podcast Co-Host',
 		company: 'Frontend Army',
-		location: 'Barcelona, Spain',
+		location: 'Spain',
 		startDate: '2022-06',
 		endDate: 'Present',
 		description:
@@ -105,7 +105,7 @@ export const experience: Position[] = [
 	{
 		title: 'Sr. Front-End Engineer',
 		company: 'True North',
-		location: 'Buenos Aires, Argentina',
+		location: 'Argentina',
 		startDate: '2020-12',
 		endDate: '2022-06',
 		description:
