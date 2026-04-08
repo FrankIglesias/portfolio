@@ -76,6 +76,15 @@ export const experience: Position[] = [
 			"Built and maintained high-performance frontend features for Tree-Nation's platform, helping users and companies track their global reforestation impact through intuitive, modern interfaces.",
 	},
 	{
+		title: 'Sr. Frontend Engineer',
+		company: 'Deel',
+		location: 'Barcelona, Spain',
+		startDate: '2023-06',
+		endDate: '2025-05',
+		description:
+			"Developed scalable frontend solutions at one of the world's leading global payroll and HR platforms. Delivered key product features in a fast-paced, fully distributed international team.",
+	},
+	{
 		title: 'Podcast Co-Host',
 		company: 'Frontend Army',
 		location: 'Barcelona, Spain',
@@ -83,15 +92,6 @@ export const experience: Position[] = [
 		endDate: 'Present',
 		description:
 			'Co-hosting a Spanish-language podcast dedicated to frontend development, sharing practical insights, trends, and interviews with developers to inspire and grow the tech community.',
-	},
-	{
-		title: 'Sr. Frontend Engineer',
-		company: 'Deel',
-		location: 'Barcelona, Spain',
-		startDate: '2023-06',
-		endDate: '2024-08',
-		description:
-			"Developed scalable frontend solutions at one of the world's leading global payroll and HR platforms. Delivered key product features in a fast-paced, fully distributed international team.",
 	},
 	{
 		title: 'Sr. Front-End Engineer',
