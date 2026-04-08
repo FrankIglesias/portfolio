@@ -80,7 +80,7 @@ export const experience: Position[] = [
 		company: 'Deel',
 		location: 'Barcelona, Spain',
 		startDate: '2023-06',
-		endDate: '2025-05',
+		endDate: '2024-06',
 		description:
 			"Developed scalable frontend solutions at one of the world's leading global payroll and HR platforms. Delivered key product features in a fast-paced, fully distributed international team.",
 	},
