@@ -1,4 +1,4 @@
-import { GitHubLogoIcon, IdCardIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
+import { FileTextIcon, GitHubLogoIcon, LinkedInLogoIcon, Pencil2Icon } from '@radix-ui/react-icons';
 
 const socialLinks = [
 	{
@@ -10,6 +10,11 @@ const socialLinks = [
 		icon: LinkedInLogoIcon,
 		link: 'https://www.linkedin.com/in/francisco-janin-iglesias/',
 		label: 'LinkedIn',
+	},
+	{
+		icon: Pencil2Icon,
+		link: 'https://blog.franciscoiglesias.me',
+		label: 'Blog',
 	},
 ];
 
@@ -40,7 +45,7 @@ export default function Navbar() {
 					className="flex items-center justify-center text-white"
 					aria-label="Resume"
 				>
-					<IdCardIcon width={24} height={24} />
+					<FileTextIcon width={24} height={24} />
 				</a>
 			</div>
 		</nav>
