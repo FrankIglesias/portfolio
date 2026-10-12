@@ -1,61 +1,61 @@
-import {
-	DiscordLogoIcon,
-	GitHubLogoIcon,
-	InstagramLogoIcon,
-	LinkedInLogoIcon,
-	MobileIcon,
-	PlayIcon,
-	SpeakerLoudIcon,
-	TwitterLogoIcon,
-	VideoIcon,
-} from '@radix-ui/react-icons';
 import Footer from './Footer';
+import {
+	DiscordIcon,
+	GithubIcon,
+	InstagramIcon,
+	LinkedInIcon,
+	SpotifyIcon,
+	TiktokIcon,
+	TwitchIcon,
+	XIcon,
+	YoutubeIcon,
+} from './SocialIcons';
 
 const FRONTEND_ARMY_SOCIALS = [
 	{
 		url: 'https://www.twitch.tv/frontend_army',
 		name: 'Twitch',
-		icon: VideoIcon,
+		icon: TwitchIcon,
 	},
 	{
 		url: 'https://www.youtube.com/@frontend_army',
 		name: 'Youtube',
-		icon: PlayIcon,
+		icon: YoutubeIcon,
 	},
 	{
 		url: 'https://open.spotify.com/show/0sN5AI1KvzNm46qhIPqppT',
 		name: 'Spotify',
-		icon: SpeakerLoudIcon,
+		icon: SpotifyIcon,
 	},
 	{
 		url: 'https://discord.com/invite/pKQ6KdPBj3',
 		name: 'Discord',
-		icon: DiscordLogoIcon,
+		icon: DiscordIcon,
 	},
 	{
 		url: 'https://www.instagram.com/frontend_army/',
 		name: 'Instagram',
-		icon: InstagramLogoIcon,
+		icon: InstagramIcon,
 	},
 	{
 		url: 'https://twitter.com/frontend_army',
 		name: 'Twitter',
-		icon: TwitterLogoIcon,
+		icon: XIcon,
 	},
 	{
 		url: 'https://www.linkedin.com/company/frontend-army',
 		name: 'Linkedin',
-		icon: LinkedInLogoIcon,
+		icon: LinkedInIcon,
 	},
 	{
 		url: 'https://www.tiktok.com/@frontend_army',
 		name: 'Tiktok',
-		icon: MobileIcon,
+		icon: TiktokIcon,
 	},
 	{
 		url: 'https://github.com/frontend-army',
 		name: 'Github',
-		icon: GitHubLogoIcon,
+		icon: GithubIcon,
 	},
 ];
 
