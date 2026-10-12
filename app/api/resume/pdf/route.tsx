@@ -1,18 +1,12 @@
-import {
-	Document,
-	Font,
-	Page,
-	StyleSheet,
-	Text,
-	View,
-	renderToBuffer,
-} from '@react-pdf/renderer';
+import { Document, Font, Page, renderToBuffer, StyleSheet, Text, View } from '@react-pdf/renderer';
 import { basics, certifications, education, experience, skills } from '../../../data/resume';
 
 Font.register({
 	family: 'Arial',
 	fonts: [
-		{ src: 'https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf' },
+		{
+			src: 'https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf',
+		},
 		{
 			src: 'https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf',
 			fontWeight: 700,
@@ -218,7 +212,11 @@ function ResumeDocument() {
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>Experience</Text>
 					{experience.map((pos) => (
-						<View key={`${pos.title}-${pos.company}-${pos.startDate}`} style={styles.expItem} wrap={false}>
+						<View
+							key={`${pos.title}-${pos.company}-${pos.startDate}`}
+							style={styles.expItem}
+							wrap={false}
+						>
 							<View style={styles.expHeader}>
 								<View style={styles.expTitleRow}>
 									<Text>

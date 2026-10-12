@@ -76,7 +76,10 @@ export default function ResumePage() {
 					<h2 className={styles.sectionTitle}>Experience</h2>
 					<ul className={styles.experienceList}>
 						{experience.map((pos) => (
-							<li key={`${pos.title}-${pos.company}-${pos.startDate}`} className={styles.experienceItem}>
+							<li
+								key={`${pos.title}-${pos.company}-${pos.startDate}`}
+								className={styles.experienceItem}
+							>
 								<div className={styles.experienceHeader}>
 									<div>
 										<span className={styles.jobTitle}>{pos.title}</span>

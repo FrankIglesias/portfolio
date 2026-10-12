@@ -50,7 +50,17 @@ export const basics: ResumeBasics = {
 };
 
 export const skills: ResumeSkills = {
-	frontend: ['React', 'Angular', 'Vue', 'Next.js', 'TypeScript', 'JavaScript', 'React Native', 'HTML', 'CSS'],
+	frontend: [
+		'React',
+		'Angular',
+		'Vue',
+		'Next.js',
+		'TypeScript',
+		'JavaScript',
+		'React Native',
+		'HTML',
+		'CSS',
+	],
 	backend: ['Node.js', 'NestJS', 'Express', 'Python'],
 	tools: ['AWS', 'Heroku', 'Git', 'Scrum', 'Agile'],
 	languages: ['Spanish (Native)', 'English (Bilingual)', 'French (Limited Working)'],
