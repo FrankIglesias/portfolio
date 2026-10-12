@@ -39,14 +39,14 @@ export interface ResumeSkills {
 
 export const basics: ResumeBasics = {
 	name: 'Francisco Iglesias',
-	title: 'Tech Lead & Senior Frontend Engineer',
+	title: 'Senior Frontend Engineer',
 	location: 'Munich, Germany',
 	email: 'ifrancisco.iglesias@gmail.com',
 	phone: '+34 660 08 58 32',
 	linkedin: 'linkedin.com/in/ignacio-francisco-janin-iglesias',
 	github: 'github.com/FrankIglesias',
 	summary:
-		'Tech Lead and Senior Frontend Engineer with 8+ years of experience building scalable web applications and leading high-performing engineering teams. Currently driving frontend architecture and engineering excellence at Tree-Nation, a global reforestation platform. Proven track record of owning the full frontend lifecycle — from technical design and code review to mentoring engineers and aligning with product and business stakeholders.',
+		'Senior Frontend Engineer with 8+ years of experience building scalable web applications and leading high-performing engineering teams. Currently developing scalable frontend solutions within the Accounts Receivable team at Qonto, a leading European fintech. Proven track record of owning the full frontend lifecycle — from technical design and code review to mentoring engineers and aligning with product and business stakeholders.',
 };
 
 export const skills: ResumeSkills = {

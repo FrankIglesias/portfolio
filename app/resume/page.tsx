@@ -10,7 +10,7 @@ function formatDate(dateStr: string): string {
 
 export const metadata = {
 	title: 'Resume – Francisco Iglesias',
-	description: 'Tech Lead & Senior Frontend Engineer with 8+ years of experience.',
+	description: 'Senior Frontend Engineer at Qonto with 8+ years of experience.',
 };
 
 export default function ResumePage() {

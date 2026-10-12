@@ -4,15 +4,15 @@ export default function MainSection() {
 			<div className="flex flex-col">
 				<h1 className="font-bebas text-[60px] leading-15.5">Francisco Iglesias</h1>
 				<h2 className="font-bebas text-[32px] leading-8.5">
-					Tech Lead @ Tree Nation
+					Senior Frontend Engineer @ Qonto
 					<br />
 					Podcast Co-Host @ Frontend Army
 				</h2>
 				<span className="text-base leading-relaxed max-w-lg">
-					Driving frontend architecture and engineering excellence at Tree-Nation, a global
-					reforestation platform. Proven track record of owning the full frontend lifecycle — from
-					technical design and code review to mentoring engineers and aligning with product and
-					business stakeholders.
+					Building scalable frontend solutions within the Accounts Receivable team at Qonto, a
+					leading European fintech. Delivering product features, improving user experiences, and
+					collaborating closely with product, design, and engineering to help businesses streamline
+					invoicing, payments, and receivables management.
 				</span>
 			</div>
 			<span

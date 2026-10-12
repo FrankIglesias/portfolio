@@ -16,7 +16,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
 	title: 'Francisco Iglesias',
 	description:
-		'Tech Lead at Tree Nation and podcast co-host at Frontend Army. Frontend engineer specialising in architecture, engineering excellence, and building high-quality web products.',
+		'Senior Frontend Engineer at Qonto and podcast co-host at Frontend Army. Frontend engineer specialising in architecture, engineering excellence, and building high-quality web products.',
 	icons: {
 		icon: '/favicon.png',
 	},
