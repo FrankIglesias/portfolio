@@ -4,7 +4,9 @@ export default function MainSection() {
 			<div className="flex flex-col">
 				<h1 className="font-bebas text-[60px] leading-15.5">Francisco Iglesias</h1>
 				<h2 className="font-bebas text-[32px] leading-8.5">
-					Tech Lead @ Tree Nation · Podcast Co-Host @ Frontend Army
+					Tech Lead @ Tree Nation
+					<br />
+					Podcast Co-Host @ Frontend Army
 				</h2>
 				<span className="text-base leading-relaxed max-w-lg">
 					Driving frontend architecture and engineering excellence at Tree-Nation, a global
