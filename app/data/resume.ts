@@ -81,7 +81,7 @@ export const experience: Position[] = [
 		company: 'Tree-Nation',
 		location: 'Spain',
 		startDate: '2025-06',
-		endDate: 'Present',
+		endDate: '2026-06',
 		description:
 			'Leading engineering teams to build scalable, high-quality web applications. Bridging technical strategy with hands-on development to drive product innovation and team growth.',
 	},
