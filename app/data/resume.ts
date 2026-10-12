@@ -68,6 +68,15 @@ export const skills: ResumeSkills = {
 
 export const experience: Position[] = [
 	{
+		title: 'Senior Frontend Engineer',
+		company: 'Qonto',
+		location: 'Germany',
+		startDate: '2026-07',
+		endDate: 'Present',
+		description:
+			'Developing scalable frontend solutions within the Accounts Receivable team at Qonto, helping businesses streamline invoicing, payments, and receivables management. Delivering product features, improving user experiences, and collaborating day to day with product, design, and engineering teams in a fast-paced fintech environment.',
+	},
+	{
 		title: 'Technical Lead',
 		company: 'Tree-Nation',
 		location: 'Spain',
